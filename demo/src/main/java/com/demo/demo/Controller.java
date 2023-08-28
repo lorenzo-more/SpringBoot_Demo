@@ -1,14 +1,18 @@
+package com.demo.demo;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.LinkedList;
+import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 public class Controller{
     private List<Livro> livros;
 
-    publicController() {
+    public Controller() {
         livros = new LinkedList<>();
         livros.add(new Livro(100, "Aprendendo Spring-Boot", "Spring", 2023));
         livros.add(new Livro(100, "Aprendendo Java", "Java", 2022));

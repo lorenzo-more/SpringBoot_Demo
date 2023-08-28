@@ -1,4 +1,4 @@
-package main.java.com.demo.demo;
+package com.demo.demo;
 
 public class Livro {
     private int id;
