@@ -4,7 +4,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,9 +15,9 @@ public class Controller{
     public Controller() {
         livros = new LinkedList<>();
         livros.add(new Livro(100, "Aprendendo Spring-Boot", "Java", 2023));
-        livros.add(new Livro(100, "Aprendendo Java", "Java", 2022));
-        livros.add(new Livro(100, "Aprendendo HTML", "HTML5", 2020));
-        livros.add(new Livro(100, "Aprendendo JavaScript", "JS", 2023));
+        livros.add(new Livro(101, "Aprendendo Java", "Java", 2022));
+        livros.add(new Livro(102, "Aprendendo HTML", "HTML5", 2020));
+        livros.add(new Livro(103, "Aprendendo JavaScript", "JS", 2023));
     }
     
     @GetMapping("")
